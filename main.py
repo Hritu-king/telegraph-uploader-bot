@@ -9,6 +9,9 @@
 import os
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
+from pyrogram import Client, filters
+from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup 
+from pyrogram.errors import UserBannedInChannel, UserNotParticipant
 from telegraph import upload_file
 from config import Config
 
