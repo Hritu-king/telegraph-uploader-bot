@@ -41,7 +41,7 @@ ERROR_BUTTON = InlineKeyboardMarkup(
 )
 
 
-@Client.on_message(filters.text & filters.private & filters.incoming)
+@bot.on_message(filters.text & filters.private & filters.incoming)
 async def fore(c, m):
       try:
         chat = await c.get_chat_member(-1001785446911, m.from_user.id)
